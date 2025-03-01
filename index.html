@@ -11,34 +11,36 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <div class="container">
-        <div class="header-container">
-          <nav class="header-nav">
-            <a href="./index.html">
-              <img src="./images/logo.png" alt="Логотип" />
-            </a>
-            <ul class="header-menu">
-              <li>
-                <a class="link" href="#tradition-section">Наші традиції</a>
-              </li>
-              <li><a class="link" href="#cookers-section">Шеф-кухарі</a></li>
-              <li><a class="link" href="#format-section">Формати</a></li>
-              <li><a class="link" href="#contacts-section">Контакти</a></li>
-            </ul>
-          </nav>
-          <button type="button">Замовити дзвінок</button>
-        </div>
-      </div>
-    </header>
     <main>
-      <section class="hero-section">
-        <div class="container">
-          <h1 class="hero-title">
-            <span class="accent">Сучасна</span> пекарня
-          </h1>
-        </div>
-      </section>
+      <div class="header-and-hero-section">
+        <header>
+          <div class="container">
+            <div class="header-container">
+              <nav class="header-nav">
+                <a href="./index.html">
+                  <img src="./images/logo.png" alt="Логотип" />
+                </a>
+                <ul class="header-menu">
+                  <li>
+                    <a class="link" href="#tradition-section">Наші традиції</a>
+                  </li>
+                  <li><a class="link" href="#chefs-section">Шеф-кухарі</a></li>
+                  <li><a class="link" href="#format-section">Формати</a></li>
+                  <li><a class="link" href="#contacts-section">Контакти</a></li>
+                </ul>
+              </nav>
+              <button type="button">Замовити дзвінок</button>
+            </div>
+          </div>
+        </header>
+        <section class="hero-section">
+          <div class="container">
+            <h1 class="hero-title">
+              <span class="accent">Сучасна</span> пекарня
+            </h1>
+          </div>
+        </section>
+      </div>
       <section class="advantages-section">
         <div class="container">
           <h1 class="visualy-hidden">Наші переваги</h1>
@@ -67,7 +69,11 @@
                 наших пекарень стильний дизайн та висока якість обслуговування!
               </p>
             </div>
-            <img src="./images/backer-man.jpg" alt="Пекар" />
+            <img
+              class="tradition-photo"
+              src="./images/backer-man.jpg"
+              alt="Пекар"
+            />
           </div>
         </div>
       </section>
@@ -76,24 +82,39 @@
           <h2 class="chefs-section-title section-title">
             Наші найкращі <span class="accent">шеф-кухарі</span>
           </h2>
-          <ul>
+          <ul class="chef-content">
             <li>
-              <article>
-                <h3 class="chefs-title">Настя</h3>
-                <p>Привіт, я Настя!</p>
-                <p>Вже 10 років, я свтілюю у життя цікаві та смачні ідеї.</p>
-                <p>Я випічу для вас найсмачніщі вироби!</p>
+              <article class="chef-card">
+                <img
+                  class="chef-photo"
+                  src="./images/Nastya-chef.png"
+                  alt="Nastya chef"
+                />
+                <div class="chef-text">
+                  <h3 class="chefs-title">Настя</h3>
+                  <p>Привіт, я Настя!</p>
+                  <p>Вже 10 років, я свтілюю у життя цікаві та смачні ідеї.</p>
+                  <p>Я випічу для вас найсмачніщі вироби!</p>
+                </div>
               </article>
             </li>
             <li>
-              <article>
-                <h3 class="chefs-title">Влад</h3>
-                <p>Привіт, я Влад!</p>
-                <p>
-                  Мій кодитерський стаж вже 18 років. SHOP BEKERY - це наша
-                  любов, з якою ми ділимось кожен раз з Вами через нашу випічку!
-                </p>
-                <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
+              <article class="chef-card">
+                <img
+                  class="chef-photo"
+                  src="./images/Vlad-chef.jpg"
+                  alt="Vlad chef"
+                />
+                <div class="chef-text">
+                  <h3 class="chefs-title">Влад</h3>
+                  <p>Привіт, я Влад!</p>
+                  <p>
+                    Мій кодитерський стаж вже 18 років. SHOP BEKERY - це наша
+                    любов, з якою ми ділимось кожен раз з Вами через нашу
+                    випічку!
+                  </p>
+                  <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
+                </div>
               </article>
             </li>
           </ul>
@@ -166,53 +187,63 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="container">
-        <a href="#">
-          <!-- лого-->
-        </a>
-        <ul>
-          <li><a class="link" href="#">Наші традиції</a></li>
-          <li><a class="link" href="#">Шеф-кухарі</a></li>
-          <li><a class="link" href="#">Формати</a></li>
-          <li><a class="link" href="#">Контакти</a></li>
+        <ul class="footer-section">
+          <li class="footer-menu">
+            <a href="./index.html">
+              <img src="./images/logo.png" alt="Логотип" />
+            </a>
+          </li>
+          <li class="footer-menu">
+            <ul>
+              <li><a class="link" href="#">Наші традиції</a></li>
+              <li><a class="link" href="#">Шеф-кухарі</a></li>
+              <li><a class="link" href="#">Формати</a></li>
+              <li><a class="link" href="#">Контакти</a></li>
+            </ul>
+          </li>
+          <li class="footer-menu">
+            <address>
+              <ul>
+                <li>
+                  <a class="link-adress" href="tel:+380960000007"
+                    >+ 38 (096) 000 00 07</a
+                  >
+                </li>
+                <li>
+                  <a class="link-adress" href="mailto:shopbakery@gmail.com"
+                    >shopbakery@gmail.com</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link-adress"
+                    href="https://g.co/kgs/ZDai1y4"
+                    target="_blank"
+                    >Україна, м. Київ, вул. Січових Стрільців 54</a
+                  >
+                </li>
+                <li>
+                  <a href="#">
+                    <!-- facebook link -->
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <!-- instagram link -->
+                  </a>
+                </li>
+              </ul>
+            </address>
+          </li>
+          <li class="footer-menu">
+            <a class="link-adress" href="#" target="_blank"
+              >Політика конфіденційності</a
+            >
+            <p class="link-copyright">&copy; 2022 Дані захищені</p>
+          </li>
         </ul>
-        <address>
-          <ul>
-            <li>
-              <a class="link-adress" href="tel:+380960000007"
-                >+ 38 (096) 000 00 07</a
-              >
-            </li>
-            <li>
-              <a class="link-adress" href="mailto:shopbakery@gmail.com"
-                >shopbakery@gmail.com</a
-              >
-            </li>
-            <li>
-              <a
-                class="link-adress"
-                href="https://g.co/kgs/ZDai1y4"
-                target="_blank"
-                >Україна, м. Київ, вул. Січових Стрільців 54</a
-              >
-            </li>
-            <li>
-              <a href="#">
-                <!-- facebook link -->
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <!-- instagram link -->
-              </a>
-            </li>
-          </ul>
-          <a class="link-adress" href="#" target="_blank"
-            >Політика конфіденційності</a
-          >
-          <p class="link-copyright">&copy; 2022 Дані захищені</p>
-        </address>
       </div>
     </footer>
   </body>

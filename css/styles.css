@@ -57,8 +57,10 @@
 :root {
   --color-primary-dark: #31261a;
   --color-primary-light: #faf4ea;
-  --color-brand-light: #819b57;
+  --color-brand-normal: #819b57;
   --color-brand-dark: #465929;
+  --color-brand-light: #cfcfbc;
+  --color-secondary: #a18268;
 }
 
 /* Base */
@@ -67,6 +69,7 @@
 }
 
 body {
+  background-color: var(--color-primary-light);
   color: var(--color-primary-dark);
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -119,8 +122,8 @@ button {
   color: var(--color-primary-light);
   font-family: Poppins, sans-serif;
   font-weight: 600;
-  background-color: var(--color-brand-light);
-  border: 2px solid var(--color-brand-light);
+  background-color: var(--color-brand-normal);
+  border: 2px solid var(--color-brand-normal);
   width: 238;
   height: 59;
   border-radius: 8px;
@@ -130,7 +133,7 @@ button {
 }
 button:hover {
   color: var(--color-brand-dark);
-  border: 2px solid var(--color-brand-light);
+  border: 2px solid var(--color-brand-normal);
   background-color: transparent;
 }
 /* Link */
@@ -139,13 +142,14 @@ button:hover {
   text-decoration: none;
 }
 .link:hover {
-  color: var(--color-brand-light);
+  color: var(--color-brand-normal);
 }
 /* Header */
 .header-container {
   display: flex;
   align-items: center;
   gap: 40px;
+  padding-top: 32px;
 }
 .header-nav {
   display: flex;
@@ -164,6 +168,20 @@ button:hover {
 .hero-section {
   padding: 272px 0;
 }
+.header-and-hero-section {
+  /* background-image: url("../images/hero-section-background.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover; */
+  /* background-attachment: fixed; */
+  background: linear-gradient(
+      102.76deg,
+      rgba(18, 18, 17, 0.78) 2.03%,
+      rgba(18, 18, 17, 0.6) 58.46%,
+      rgba(18, 18, 17, 0) 90.36%
+    ),
+    url("../images/hero-section-background.png") no-repeat center center/cover;
+}
 .hero-title {
   color: var(--color-primary-light);
   text-align: center;
@@ -172,11 +190,11 @@ button:hover {
   margin-bottom: 0px;
 }
 .hero-title .accent {
-  color: var(--color-brand-light);
+  color: var(--color-brand-normal);
 }
 /* Advantages */
 .advantages-section {
-  background-color: var(--color-brand-light);
+  background-color: var(--color-brand-normal);
   padding: 16px 0;
 }
 .advantages {
@@ -191,6 +209,9 @@ button:hover {
   color: var(--color-primary-light);
 }
 /* Tratidions section */
+.tradition-photo {
+  border-radius: 200px 200px 0 0;
+}
 .tradition-section {
   padding-top: 96px;
 }
@@ -207,24 +228,56 @@ button:hover {
 }
 .tradition-text .uppercase {
   text-transform: uppercase;
-  color: var(--color-brand-light);
+  color: var(--color-brand-normal);
   font-weight: 600;
 }
 .tradition-text .brand {
-  color: var(--color-brand-light);
+  color: var(--color-brand-normal);
   font-weight: 600;
 }
 .tradition-text.limited {
   width: 340px;
 }
 /*  Chefs-section */
+.chef-content {
+  display: flex;
+  justify-content: space-between;
+}
+.chef-text {
+  display: block;
+}
+.chef-card {
+  display: flex;
+  gap: 30px;
+  max-width: 605px;
+}
+.chef-photo {
+  border-radius: 4px 4px 4px 200px;
+  box-shadow: -16px 16px 0 0 var(--color-primary-light),
+    -16px 16px 0 2px var(--color-secondary);
+}
+.chefs-section-title::before,
+.chefs-section-title::after {
+  width: 352px;
+  /* height: 2px; */
+  display: block;
+  flex: 1;
+  border: 1px solid var(--color-brand-light);
+  content: "";
+}
 .chefs-title {
   font-weight: 600;
   font-size: 40px;
   margin-bottom: 16px;
 }
 .chefs-section-title {
-  margin-bottom: 80px;
+  margin: 0 auto 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  text-align: center;
+  gap: 20px;
 }
 
 /* Format section */
@@ -250,6 +303,7 @@ button:hover {
   color: var(--color-primary-light);
 }
 .format-section-title {
+  text-align: center;
   margin-bottom: 80px;
 }
 .format-text {
@@ -262,13 +316,28 @@ button:hover {
   margin-bottom: 16px;
 }
 /* Footer */
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  max-width: 211px;
+  gap: 16px;
+}
+.footer-section {
+  padding: 32px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.footer {
+  background-image: url("../images/footer-background.png");
+  background-color: var(--color-primary-dark);
+}
 .link-adress {
   color: var(--color-primary-light);
   font-size: 16px;
   text-decoration: none;
 }
 .link-adress:hover {
-  color: var(--color-brand-light);
+  color: var(--color-brand-normal);
   font-size: 16px;
   text-decoration: none;
 }
