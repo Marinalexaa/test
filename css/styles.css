@@ -281,6 +281,26 @@ button:hover {
 }
 
 /* Format section */
+.carousel-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border-radius: 50%;
+  border: 1px solid var(--color-primary-dark);
+  fill: var(--color-primary-dark);
+  cursor: pointer;
+}
+
+.carousel-button:hover {
+  background-color: var(--color-primary-dark);
+  fill: var(--color-brand-light);
+  border-color: var(--color-primary-dark);
+}
+
 .format-items {
   flex-basis: calc((100% - 40px) / 3);
 }
@@ -316,6 +336,19 @@ button:hover {
   margin-bottom: 16px;
 }
 /* Footer */
+.link-social {
+  fill: var(--color-brand-light);
+}
+
+.link-social:hover {
+  fill: var(--color-brand-normal);
+}
+
+.socials {
+  display: flex;
+  gap: 22px;
+}
+
 .footer-menu {
   display: flex;
   flex-direction: column;
